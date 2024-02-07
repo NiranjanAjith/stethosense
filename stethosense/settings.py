@@ -162,9 +162,3 @@ REST_FRAMEWORK = {
 }
 
 LOGOUT_REDIRECT_URL = '/'
-
-AUTHENTICATION_BACKENDS = [
-    # ...
-    'lab.auth_backends.LabUserBackend',
-    'django.contrib.auth.backends.ModelBackend',
-]
