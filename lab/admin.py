@@ -1,8 +1,8 @@
 from django.contrib import admin
-from .models import LabUser, LabReport
+from .models import LabRegistration, LabReport
 
 
-admin.site.register(LabUser)
+admin.site.register(LabRegistration)
 admin.site.register(LabReport)
 
 

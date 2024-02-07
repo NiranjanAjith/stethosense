@@ -1,20 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Login</title>
+    <title>Lab Login</title>
 </head>
 <body>
-    <h2>Login</h2>
-    {% if error_message %}
-        <p class="error">{{ error_message }}</p>
-    {% endif %}
+    <h1>Lab Login</h1>
     <form method="post">
         {% csrf_token %}
-        {{ form.lab_id.label_tag }} {{ form.lab_id }}
-        <br>
-        {{ form.lab_password.label_tag }} {{ form.lab_password }}
-        <br>
-        <input type="submit" value="Login">
+        {{ form.as_p }}
+        <button type="submit">Login</button>
     </form>
 </body>
 </html>
